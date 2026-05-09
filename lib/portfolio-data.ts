@@ -216,3 +216,28 @@ export const orbitItems = [
     className: "left-2 top-1/4",
   },
 ];
+
+export const heroContent = {
+  badge: "Available for Frontend Engineer roles",
+
+  heading:
+    "Building scalable frontend systems with performance, polish, and enterprise-grade user experiences.",
+
+  description:
+    "Frontend Engineer with 4.5+ years of experience building high-performance web applications using React.js, Next.js, TypeScript, and modern frontend architectures. Specialized in enterprise dashboards, scalable UI systems, responsive design, and performance optimization across large-scale products.",
+
+  primaryCta: {
+    label: "View Projects",
+    href: "#projects",
+  },
+
+  secondaryCta: {
+    label: "Contact Me",
+    href: "#contact",
+  },
+
+  resumeCta: {
+    label: "Download Resume",
+    href: "/resume/Shobhit-Rajvanshi-Resume.pdf",
+  },
+};
