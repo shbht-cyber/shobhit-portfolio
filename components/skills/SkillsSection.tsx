@@ -4,8 +4,10 @@ import {
   MotionSection,
   staggerContainer,
 } from "@/lib/MotionProvider";
+
 import { SectionHeading } from "@/components/common/SectionHeading";
-import { skillGroups } from "@/lib/portfolio-data";
+
+import { skillGroups, skillsContent } from "@/lib/portfolio-data";
 
 const sectionViewport = { once: true, margin: "-120px" };
 
@@ -20,13 +22,15 @@ export default function SkillsSection() {
       className="section-shell py-20"
     >
       <SectionHeading
-        eyebrow="Skills"
-        title="A modern frontend stack with product-minded engineering habits."
-        copy="The layout is dense enough for recruiters to scan and polished enough to communicate senior craft."
+        eyebrow={skillsContent.eyebrow}
+        title={skillsContent.title}
+        copy={skillsContent.copy}
       />
+
       <div className="grid gap-5 md:grid-cols-2">
         {skillGroups.map((group) => {
           const Icon = group.icon;
+
           return (
             <MotionDiv
               key={group.title}
@@ -37,10 +41,12 @@ export default function SkillsSection() {
                 <span className="grid size-12 place-items-center rounded border border-cyanVolt/30 bg-cyanVolt/10 text-cyanVolt">
                   <Icon size={24} />
                 </span>
+
                 <h3 className="text-xl font-semibold text-white">
                   {group.title}
                 </h3>
               </div>
+
               <div className="mt-6 flex flex-wrap gap-2">
                 {group.skills.map((skill) => (
                   <span

@@ -271,3 +271,21 @@ export const experienceContent = {
 
   copy: "4.5+ years of experience delivering performant React and Next.js applications with focus on frontend architecture, enterprise dashboards, reusable UI systems, and business-driven product experiences.",
 };
+
+export const projectsContent = {
+  eyebrow: "Projects",
+
+  title:
+    "Production-focused applications built with scalable frontend architecture and modern user experiences.",
+
+  copy: "A collection of full-stack platforms, AI-powered applications, and enterprise dashboard experiences built using React.js, Next.js, TypeScript, Node.js, and modern frontend engineering practices.",
+};
+
+export const skillsContent = {
+  eyebrow: "Skills",
+
+  title:
+    "Modern frontend technologies combined with scalable engineering practices.",
+
+  copy: "Experienced in building high-performance React and Next.js applications with strong focus on frontend architecture, reusable UI systems, responsive design, testing, and performance optimization.",
+};

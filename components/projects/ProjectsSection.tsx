@@ -1,12 +1,14 @@
 import { ArrowUpRight } from "lucide-react";
+
 import {
   fadeUp,
   MotionDiv,
   MotionSection,
   staggerContainer,
 } from "@/lib/MotionProvider";
+
 import { SectionHeading } from "@/components/common/SectionHeading";
-import { projects } from "@/lib/portfolio-data";
+import { projects, projectsContent } from "@/lib/portfolio-data";
 import { cn } from "@/lib/utils";
 
 const sectionViewport = { once: true, margin: "-120px" };
@@ -22,10 +24,11 @@ export default function ProjectsSection() {
       className="section-shell py-20"
     >
       <SectionHeading
-        eyebrow="Projects"
-        title="Case-study cards built to make impact obvious in seconds."
-        copy="Each card leads with product context, measurable outcomes, modern tooling, and interaction-ready affordances."
+        eyebrow={projectsContent.eyebrow}
+        title={projectsContent.title}
+        copy={projectsContent.copy}
       />
+
       <div className="grid gap-5 lg:grid-cols-3">
         {projects.map((project, index) => (
           <MotionDiv
@@ -41,16 +44,21 @@ export default function ProjectsSection() {
                 project.accent === "lime" && "bg-limeVolt",
               )}
             />
+
             <p className="font-mono text-xs uppercase tracking-[0.22em] text-slate-400">
               Project 0{index + 1}
             </p>
+
             <h3 className="mt-4 text-2xl font-semibold text-white">
               {project.name}
             </h3>
+
             <p className="mt-2 text-sm text-cyanVolt">{project.type}</p>
+
             <p className="mt-5 min-h-[112px] leading-7 text-slate-300">
               {project.description}
             </p>
+
             <div className="mt-5 flex flex-wrap gap-2">
               {project.stack.map((tech) => (
                 <span
@@ -61,10 +69,12 @@ export default function ProjectsSection() {
                 </span>
               ))}
             </div>
+
             <div className="mt-7 flex items-center justify-between border-t border-white/10 pt-5">
               <span className="font-mono text-sm text-limeVolt">
                 {project.metrics}
               </span>
+
               <button
                 type="button"
                 aria-label={`Open ${project.name}`}
