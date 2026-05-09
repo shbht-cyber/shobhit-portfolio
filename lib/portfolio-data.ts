@@ -241,3 +241,24 @@ export const heroContent = {
     href: "/resume/Shobhit-Rajvanshi-Resume.pdf",
   },
 };
+
+export const aboutContent = {
+  eyebrow: "About",
+
+  title:
+    "Frontend engineer focused on scalable systems, performance, and polished user experiences.",
+
+  copy: "I build modern frontend applications that balance clean architecture, responsiveness, accessibility, and business impact. From enterprise dashboards to high-traffic consumer platforms, I focus on creating scalable UI systems that feel fast, intuitive, and reliable.",
+
+  profileTitle: "React.js, Next.js, TypeScript & Enterprise UI Engineering",
+
+  profileDescription:
+    "With 4.5+ years of experience across SaaS, recruitment, and real estate platforms, I specialize in building production-grade frontend systems using React.js, Next.js, TypeScript, and modern frontend architectures. My work focuses on scalable component systems, dashboard experiences, frontend performance, and maintainable engineering practices.",
+
+  tags: [
+    "Open to Frontend Roles",
+    "India Based",
+    "Product Engineering",
+    "Enterprise UI Systems",
+  ],
+};
