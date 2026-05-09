@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Arjun Mehta | Frontend Developer",
+  title: "Shobhit Rajvanshi | Senior Frontend Engineer",
   description:
-    "A futuristic frontend developer portfolio built with Next.js, TypeScript, Tailwind CSS, and Framer Motion.",
+    "Frontend Engineer with 4.5+ years of experience building scalable, high-performance web applications using React.js, Next.js, TypeScript, and modern frontend architectures. Specialized in enterprise dashboards, design systems, performance optimization, and responsive user experiences.",
 };
 
 export default function RootLayout({
