@@ -289,3 +289,28 @@ export const skillsContent = {
 
   copy: "Experienced in building high-performance React and Next.js applications with strong focus on frontend architecture, reusable UI systems, responsive design, testing, and performance optimization.",
 };
+
+export const uiLabContent = {
+  eyebrow: "Frontend Engineering Lab",
+
+  title:
+    "Frontend systems focused on scalability, accessibility, and polished user experiences.",
+
+  copy: "Beyond visual design, modern frontend engineering requires scalable architecture, responsive interactions, accessibility standards, performance optimization, and production-ready component systems.",
+
+  uiHealthScore: "98 / 100",
+
+  buttonStates: ["Idle", "Hover", "Focus"],
+
+  accessibilityItems: [
+    "Accessibility Standards",
+    "Keyboard Navigation",
+    "ARIA & Semantic HTML",
+  ],
+
+  deliverySteps: ["Design", "Develop", "Deploy"],
+
+  deliveryTitle: "Scalable component delivery",
+
+  deliverySubtitle: "From design systems to production-ready UI",
+};
