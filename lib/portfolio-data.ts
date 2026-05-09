@@ -10,7 +10,7 @@ import {
   Rocket,
   ShieldCheck,
   Sparkles,
-  Workflow
+  Workflow,
 } from "lucide-react";
 
 export const navItems = [
@@ -19,119 +19,159 @@ export const navItems = [
   { label: "Projects", href: "#projects" },
   { label: "Skills", href: "#skills" },
   { label: "Lab", href: "#animation-lab" },
-  { label: "Contact", href: "#contact" }
+  { label: "Contact", href: "#contact" },
 ];
 
 export const stats = [
-  { value: "4.5+", label: "Years building UI" },
-  { value: "28", label: "Products shipped" },
-  { value: "96", label: "Lighthouse score avg" },
-  { value: "12k", label: "Daily users served" }
+  { value: "4.5+", label: "Years of frontend experience" },
+  { value: "20+", label: "Enterprise features delivered" },
+  { value: "30%+", label: "Performance & workflow improvements" },
+  { value: "1M+", label: "Users impacted across products" },
 ];
 
 export const experiences = [
   {
-    role: "Senior Frontend Developer",
-    company: "NovaStack Labs",
-    period: "2024 - Present",
+    role: "Senior Software Engineer",
+    company: "Josys",
+    period: "Nov 2024 - Present",
     impact:
-      "Leading frontend architecture for a SaaS analytics product with design-system primitives, dashboard performance work, and high-trust release practices.",
-    points: ["Cut page interaction latency by 38%", "Built tokenized theming across 60+ screens", "Mentored 5 engineers on React patterns"]
+      "Building enterprise-scale SaaS admin platforms with AI-driven analytics, Micro Frontend architecture, advanced data visualization, and secure governance workflows for global IT management systems.",
+    points: [
+      "Built AI-driven risk analytics dashboards using React, TypeScript, and Nivo Charts",
+      "Developed File Governance workflows reducing manual admin effort by 30%",
+      "Implemented enterprise-grade data grids with filtering, caching, and query persistence",
+    ],
   },
   {
-    role: "Frontend Developer",
-    company: "PixelForge Studio",
-    period: "2021 - 2024",
+    role: "Software Engineer",
+    company: "Monster India (Foundit)",
+    period: "Jan 2023 - Oct 2024",
     impact:
-      "Delivered responsive interfaces for fintech, healthtech, and internal productivity platforms with a strong focus on accessibility and motion polish.",
-    points: ["Owned Next.js migrations", "Created reusable component libraries", "Improved conversion flows with A/B variants"]
+      "Developed high-traffic recruitment and fellowship platforms using React and Next.js with strong focus on SEO, Core Web Vitals, scalable UI systems, and conversion-driven experiences.",
+    points: [
+      "Migrated Laravel pages to Next.js contributing to 20% increase in job applications",
+      "Built reusable npm-based global header library adopted across multiple applications",
+      "Integrated CleverTap and Freshpaint analytics for conversion and event tracking",
+    ],
   },
   {
-    role: "UI Engineer",
-    company: "Orbit Digital",
-    period: "2020 - 2021",
+    role: "Software Engineer",
+    company: "InfoEdge India Ltd (99acres)",
+    period: "Sept 2021 - Dec 2022",
     impact:
-      "Built marketing pages and product portals while developing a foundation in semantic HTML, CSS architecture, and client communication.",
-    points: ["Shipped 14 client launches", "Standardized QA checklists", "Partnered closely with designers"]
-  }
+      "Worked on scalable real estate discovery experiences including locality pages, recommendation systems, and responsive user journeys optimized for high traffic and engagement.",
+    points: [
+      "Improved property discovery journeys increasing user clicks by 30%",
+      "Developed reusable UI components for large-scale landing pages",
+      "Optimized frontend responsiveness and rendering performance across platforms",
+    ],
+  },
 ];
 
 export const projects = [
   {
-    name: "PulseOps Command Center",
-    type: "Realtime Operations Dashboard",
+    name: "DevMate",
+    type: "Full Stack Social Networking Platform",
     description:
-      "A telemetry-rich admin console with streaming charts, role-based workflows, and precise interaction states for enterprise support teams.",
-    stack: ["Next.js", "TypeScript", "Tailwind", "TanStack Query"],
-    metrics: "47% faster triage",
-    accent: "cyan"
+      "A scalable social networking platform featuring JWT authentication, real-time chat with WebSockets, responsive UI architecture, and modern state management for seamless user experiences.",
+    stack: ["React.js", "Node.js", "MongoDB", "Socket.IO"],
+    metrics: "Realtime messaging & scalable APIs",
+    accent: "cyan",
   },
   {
-    name: "SynthCart Studio",
-    type: "Composable Commerce Builder",
+    name: "Netflix GPT App",
+    type: "AI-Powered Movie Recommendation Platform",
     description:
-      "A modular storefront editor with drag-and-drop merchandising, motion-enhanced previews, and a scalable component registry.",
-    stack: ["React", "Framer Motion", "Zustand", "Stripe"],
-    metrics: "3.2x editor adoption",
-    accent: "magenta"
+      "A Netflix-inspired streaming interface integrating Gemini AI recommendations, TMDB APIs, Firebase authentication, and dynamic search-driven movie discovery workflows.",
+    stack: ["React.js", "Redux", "Gemini AI", "Firebase"],
+    metrics: "AI-powered recommendation workflows",
+    accent: "magenta",
   },
   {
-    name: "VertexHire Portal",
-    type: "Recruitment Workflow Platform",
+    name: "Enterprise Analytics Dashboard",
+    type: "AI Risk & Governance Platform",
     description:
-      "An applicant tracking experience with accessible filters, collaborative notes, interview scheduling, and performance-minded list rendering.",
-    stack: ["Next.js", "Prisma", "Postgres", "Radix UI"],
-    metrics: "61% fewer clicks",
-    accent: "lime"
-  }
+      "A modern enterprise admin dashboard with analytics visualizations, governance workflows, advanced data grids, role-based access controls, and performance-focused architecture.",
+    stack: ["Next.js", "TypeScript", "Redux", "Material UI"],
+    metrics: "30% reduction in manual admin effort",
+    accent: "lime",
+  },
 ];
 
 export const skillGroups = [
   {
     title: "Core Frontend",
     icon: Braces,
-    skills: ["React", "Next.js", "TypeScript", "JavaScript", "HTML5", "CSS3"]
+    skills: [
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+    ],
   },
   {
-    title: "Interface Systems",
+    title: "UI Engineering",
     icon: Layers3,
-    skills: ["Tailwind CSS", "Design Systems", "Radix UI", "Storybook", "Accessibility", "Responsive UI"]
+    skills: [
+      "Tailwind CSS",
+      "Material UI",
+      "Responsive Design",
+      "Component Libraries",
+      "Micro Frontends",
+      "Design Systems",
+    ],
   },
   {
-    title: "Motion & Polish",
+    title: "Performance & Architecture",
     icon: Sparkles,
-    skills: ["Framer Motion", "Microinteractions", "Page Transitions", "SVG Animation", "Scroll Effects", "Prototyping"]
+    skills: [
+      "SSR",
+      "Code Splitting",
+      "Lazy Loading",
+      "Core Web Vitals",
+      "Caching",
+      "Performance Optimization",
+    ],
   },
   {
-    title: "Engineering",
+    title: "Testing & Engineering",
     icon: Workflow,
-    skills: ["REST", "GraphQL", "Testing", "CI/CD", "Performance", "Code Review"]
-  }
+    skills: [
+      "Jest",
+      "React Testing Library",
+      "MSW",
+      "REST APIs",
+      "Git",
+      "Code Reviews",
+    ],
+  },
 ];
 
 export const strengths = [
-  { icon: MonitorSmartphone, label: "Responsive product surfaces" },
-  { icon: Gauge, label: "Performance-focused delivery" },
-  { icon: ShieldCheck, label: "Accessible interaction design" },
-  { icon: GitBranch, label: "Clean release collaboration" },
-  { icon: DatabaseZap, label: "API-driven UI architecture" },
-  { icon: Figma, label: "Designer-friendly implementation" }
+  { icon: MonitorSmartphone, label: "Responsive enterprise applications" },
+  { icon: Gauge, label: "Performance-focused frontend architecture" },
+  { icon: ShieldCheck, label: "Scalable and secure UI workflows" },
+  { icon: GitBranch, label: "Collaborative development & code reviews" },
+  { icon: DatabaseZap, label: "API-driven dashboard systems" },
+  { icon: Figma, label: "Pixel-perfect UI implementation" },
 ];
 
 export const animationCards = [
   {
-    title: "Microinteractions that explain state",
-    copy: "Loading, hover, focus, and success states are designed to make product flows feel responsive and trustworthy.",
-    icon: Rocket
+    title: "Smooth enterprise-grade interactions",
+    copy: "Carefully designed loading states, transitions, and interaction feedback make complex admin workflows feel intuitive and responsive.",
+    icon: Rocket,
   },
   {
-    title: "Component systems with motion rules",
-    copy: "Reusable UI primitives keep transitions consistent across dashboards, forms, cards, menus, and empty states.",
-    icon: Cpu
+    title: "Reusable scalable frontend systems",
+    copy: "Built modular component architectures and shared UI systems that scale efficiently across dashboards, portals, and enterprise products.",
+    icon: Cpu,
   },
   {
-    title: "Accessible animation decisions",
-    copy: "Motion is purposeful, readable, and easy to adapt for reduced-motion preferences and keyboard users.",
-    icon: Sparkles
-  }
+    title: "Performance-first frontend engineering",
+    copy: "Focused on Core Web Vitals, rendering optimization, caching strategies, and accessibility to deliver fast and reliable user experiences.",
+    icon: Sparkles,
+  },
 ];
