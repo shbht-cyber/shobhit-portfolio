@@ -262,3 +262,12 @@ export const aboutContent = {
     "Enterprise UI Systems",
   ],
 };
+
+export const experienceContent = {
+  eyebrow: "Experience",
+
+  title:
+    "Built scalable frontend systems across enterprise SaaS, recruitment, and high-traffic consumer platforms.",
+
+  copy: "4.5+ years of experience delivering performant React and Next.js applications with focus on frontend architecture, enterprise dashboards, reusable UI systems, and business-driven product experiences.",
+};
