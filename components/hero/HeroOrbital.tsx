@@ -3,6 +3,7 @@
 import { Command } from "lucide-react";
 import { MotionDiv } from "../../lib/MotionProvider";
 import { basicDetails, orbitItems } from "@/lib/portfolio-data";
+import Image from "next/image";
 
 export function HeroOrbital() {
   return (
@@ -22,6 +23,17 @@ export function HeroOrbital() {
       <div className="absolute inset-20 rounded-full border border-white/10 bg-white/[0.035]" />
 
       <div className="absolute inset-28 rounded-full bg-radial-signal blur-2xl" />
+
+      <div className="absolute left-1/2 top-1/2  size-40 -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-full border border-cyanVolt/40 shadow-glow sm:size-80">
+        <Image
+          src="/profile.jpg"
+          alt={basicDetails.name}
+          fill
+          priority
+          sizes="(min-width: 640px) 176px, 144px"
+          className="object-cover object-center"
+        />
+      </div>
 
       <MotionDiv
         initial={{ opacity: 0, scale: 0.86 }}
