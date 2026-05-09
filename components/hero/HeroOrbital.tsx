@@ -1,15 +1,8 @@
 "use client";
 
-import { Code2, Command, Cpu, Figma, GitPullRequestArrow, Layers3 } from "lucide-react";
-import { MotionDiv } from "./motion-provider";
-
-const orbitItems = [
-  { icon: Code2, label: "React", className: "left-1/2 top-0 -translate-x-1/2" },
-  { icon: Figma, label: "Design", className: "right-2 top-1/4" },
-  { icon: Cpu, label: "Perf", className: "bottom-6 right-10" },
-  { icon: GitPullRequestArrow, label: "CI", className: "bottom-6 left-10" },
-  { icon: Layers3, label: "UI", className: "left-2 top-1/4" }
-];
+import { Command } from "lucide-react";
+import { MotionDiv } from "../../lib/MotionProvider";
+import { basicDetails, orbitItems } from "@/lib/portfolio-data";
 
 export function HeroOrbital() {
   return (
@@ -19,12 +12,15 @@ export function HeroOrbital() {
         transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
         className="absolute inset-6 rounded-full border border-dashed border-cyanVolt/30"
       />
+
       <MotionDiv
         animate={{ rotate: -360 }}
         transition={{ duration: 42, repeat: Infinity, ease: "linear" }}
         className="absolute inset-16 rounded-full border border-dashed border-magentaVolt/25"
       />
+
       <div className="absolute inset-20 rounded-full border border-white/10 bg-white/[0.035]" />
+
       <div className="absolute inset-28 rounded-full bg-radial-signal blur-2xl" />
 
       <MotionDiv
@@ -35,17 +31,24 @@ export function HeroOrbital() {
       >
         <div>
           <Command className="mx-auto text-cyanVolt" size={38} />
+
           <p className="mt-4 font-mono text-xs uppercase tracking-[0.22em] text-slate-400">
-            Interface Engine
+            {basicDetails.role}
           </p>
+
           <p className="mt-2 text-2xl font-black tracking-tight text-white sm:text-3xl">
-            4.5 yrs
+            {basicDetails.experience} Years
+          </p>
+
+          <p className="mt-2 mb-4 text-xs text-slate-400">
+            {basicDetails.mainSkills}
           </p>
         </div>
       </MotionDiv>
 
       {orbitItems.map((item, index) => {
         const Icon = item.icon;
+
         return (
           <MotionDiv
             key={item.label}

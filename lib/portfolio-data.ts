@@ -11,14 +11,27 @@ import {
   ShieldCheck,
   Sparkles,
   Workflow,
+  GitPullRequestArrow,
+  Code2,
 } from "lucide-react";
+
+export const basicDetails = {
+  prefix: "SR",
+  name: "Shobhit Rajvanshi",
+  dob: "01-July-1998",
+  role: "Frontend Engineer",
+  designation: "Senior Frontend Developer",
+  mail: "shobhitraj1998@gmail.com",
+  experience: "4.5+",
+  mainSkills: "React • Next.js • TypeScript",
+};
 
 export const navItems = [
   { label: "About", href: "#about" },
   { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
   { label: "Skills", href: "#skills" },
-  { label: "Lab", href: "#animation-lab" },
+  { label: "UI Lab", href: "#animation-lab" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -173,5 +186,33 @@ export const animationCards = [
     title: "Performance-first frontend engineering",
     copy: "Focused on Core Web Vitals, rendering optimization, caching strategies, and accessibility to deliver fast and reliable user experiences.",
     icon: Sparkles,
+  },
+];
+
+export const orbitItems = [
+  {
+    icon: Code2,
+    label: "React.js",
+    className: "left-1/2 top-0 -translate-x-1/2",
+  },
+  {
+    icon: Figma,
+    label: "UI Systems",
+    className: "right-2 top-1/4",
+  },
+  {
+    icon: Cpu,
+    label: "Performance",
+    className: "bottom-6 right-10",
+  },
+  {
+    icon: GitPullRequestArrow,
+    label: "Code Reviews",
+    className: "bottom-6 left-10",
+  },
+  {
+    icon: Layers3,
+    label: "Next.js",
+    className: "left-2 top-1/4",
   },
 ];

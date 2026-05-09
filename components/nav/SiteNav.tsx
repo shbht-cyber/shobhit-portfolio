@@ -2,9 +2,9 @@
 
 import { Menu, Send, X } from "lucide-react";
 import { useState } from "react";
-import { navItems } from "@/lib/portfolio-data";
+import { basicDetails, navItems } from "@/lib/portfolio-data";
 import { cn } from "@/lib/utils";
-import { MotionDiv } from "./motion-provider";
+import { MotionDiv } from "../../lib/MotionProvider";
 
 export function SiteNav() {
   const [open, setOpen] = useState(false);
@@ -14,12 +14,14 @@ export function SiteNav() {
       <nav className="section-shell flex h-16 items-center justify-between">
         <a href="#top" className="group flex items-center gap-3">
           <span className="grid size-9 place-items-center rounded border border-cyanVolt/45 bg-cyanVolt/10 font-mono text-sm font-black text-cyanVolt shadow-glow">
-            AM
+            {basicDetails.prefix}
           </span>
           <span className="hidden leading-tight sm:block">
-            <span className="block text-sm font-semibold text-white">Arjun Mehta</span>
+            <span className="block text-sm font-semibold text-white">
+              {basicDetails.name}
+            </span>
             <span className="block font-mono text-[10px] uppercase tracking-[0.22em] text-slate-400">
-              Frontend Developer
+              {basicDetails.designation}
             </span>
           </span>
         </a>
@@ -37,11 +39,11 @@ export function SiteNav() {
         </div>
 
         <a
-          href="mailto:arjun.mehta@example.com"
+          href={`mailto:${basicDetails.mail}`}
           className="hidden items-center gap-2 rounded border border-limeVolt/40 bg-limeVolt/10 px-4 py-2 text-sm font-semibold text-limeVolt transition hover:bg-limeVolt/20 lg:flex"
         >
           <Send size={16} />
-          Hire Me
+          {`Let's Connect`}
         </a>
 
         <button
@@ -67,7 +69,7 @@ export function SiteNav() {
               onClick={() => setOpen(false)}
               className={cn(
                 "rounded border border-white/10 bg-white/[0.04] px-4 py-3",
-                "text-sm font-medium text-slate-200"
+                "text-sm font-medium text-slate-200",
               )}
             >
               {item.label}
