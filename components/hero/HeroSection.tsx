@@ -7,7 +7,7 @@ import { heroContent } from "@/lib/portfolio-data";
 
 export default function HeroSection() {
   return (
-    <section className="section-shell relative flex min-h-screen items-center pb-20 pt-28">
+    <section className="section-shell relative flex min-h-screen items-center pt-28">
       <div className="grid w-full items-center gap-12 lg:grid-cols-[1.08fr_0.92fr]">
         <MotionDiv
           initial="hidden"

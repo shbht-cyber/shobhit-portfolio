@@ -19,7 +19,7 @@ export default function AboutSection() {
       whileInView="show"
       viewport={sectionViewport}
       variants={staggerContainer}
-      className="section-shell py-20"
+      className="section-shell pt-2"
     >
       <SectionHeading
         eyebrow={aboutContent.eyebrow}

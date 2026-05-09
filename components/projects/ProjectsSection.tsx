@@ -21,7 +21,7 @@ export default function ProjectsSection() {
       whileInView="show"
       viewport={sectionViewport}
       variants={staggerContainer}
-      className="section-shell py-20"
+      className="section-shell pt-20"
     >
       <SectionHeading
         eyebrow={projectsContent.eyebrow}

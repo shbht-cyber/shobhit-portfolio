@@ -314,3 +314,22 @@ export const uiLabContent = {
 
   deliverySubtitle: "From design systems to production-ready UI",
 };
+
+export const contactContent = {
+  eyebrow: "Contact",
+
+  title: "Let’s build scalable frontend products with modern user experiences.",
+
+  description:
+    "Open to Frontend Engineer opportunities focused on React.js, Next.js, TypeScript, scalable UI systems, performance optimization, and enterprise product development.",
+
+  email: "shobhitraj1998@gmail.com",
+
+  linkedin: "https://www.linkedin.com/in/shobhit-rajvanshi",
+
+  github: "https://github.com/shbht-cyber",
+
+  location: "Bengaluru, India",
+
+  footerTech: "React.js / Next.js / TypeScript / Tailwind CSS / Framer Motion",
+};
