@@ -75,13 +75,15 @@ export default function ProjectsSection() {
                 {project.metrics}
               </span>
 
-              <button
-                type="button"
-                aria-label={`Open ${project.name}`}
-                className="grid size-10 place-items-center rounded border border-white/10 bg-white/[0.06] text-white transition group-hover:border-cyanVolt/50 group-hover:text-cyanVolt"
-              >
-                <ArrowUpRight size={18} />
-              </button>
+              <a target="_blank" href={project?.url}>
+                <button
+                  type="button"
+                  aria-label={`Open ${project.name}`}
+                  className="grid size-10 place-items-center rounded border border-white/10 bg-white/[0.06] text-white transition group-hover:border-cyanVolt/50 group-hover:text-cyanVolt"
+                >
+                  <ArrowUpRight size={18} />
+                </button>
+              </a>
             </div>
           </MotionDiv>
         ))}

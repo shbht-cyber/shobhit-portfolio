@@ -36,10 +36,10 @@ export const navItems = [
 ];
 
 export const stats = [
-  { value: "4.5+", label: "Years of frontend experience" },
-  { value: "20+", label: "Enterprise features delivered" },
-  { value: "30%+", label: "Performance & workflow improvements" },
-  { value: "1M+", label: "Users impacted across products" },
+  { value: "4.5+", label: "Years Experience" },
+  { value: "3", label: "Product Companies" },
+  { value: "20%+", label: "Performance Improvements" },
+  { value: "70%+", label: "Test Coverage Delivered" },
 ];
 
 export const experiences = [
@@ -90,6 +90,7 @@ export const projects = [
     stack: ["React.js", "Node.js", "MongoDB", "Socket.IO"],
     metrics: "Realtime messaging & scalable APIs",
     accent: "cyan",
+    url: "https://devmate-frontend.onrender.com/",
   },
   {
     name: "Netflix GPT App",
@@ -99,6 +100,7 @@ export const projects = [
     stack: ["React.js", "Redux", "Gemini AI", "Firebase"],
     metrics: "AI-powered recommendation workflows",
     accent: "magenta",
+    url: "https://hey-netmirror-gpt.netlify.app/",
   },
   {
     name: "Enterprise Analytics Dashboard",
@@ -238,7 +240,7 @@ export const heroContent = {
 
   resumeCta: {
     label: "Download Resume",
-    href: "/resume/Shobhit-Rajvanshi-Resume.pdf",
+    href: "/resume/Shobhit_Rajvanshi_Resume_Senior_Frontend_Developer.pdf",
   },
 };
 

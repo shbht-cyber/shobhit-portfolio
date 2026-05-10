@@ -58,6 +58,7 @@ export default function HeroSection() {
             </a>
 
             <a
+              target="_blank"
               href={heroContent.resumeCta.href}
               className="inline-flex items-center justify-center gap-2 rounded border border-limeVolt/30 bg-limeVolt/10 px-5 py-3 font-semibold text-limeVolt transition hover:bg-limeVolt/15"
             >
