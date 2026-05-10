@@ -8,6 +8,7 @@ import ProjectsSection from "@/components/projects/ProjectsSection";
 import SkillsSection from "@/components/skills/SkillsSection";
 import UiLabSection from "@/components/animation/UiLabSection";
 import ContactSection from "@/components/contact/ContactSection";
+import Footer from "@/components/footer/Footer";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       <SkillsSection />
       <UiLabSection />
       <ContactSection />
+      <Footer />
     </main>
   );
 }
