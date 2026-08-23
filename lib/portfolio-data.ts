@@ -46,7 +46,7 @@ export const experiences = [
   {
     role: "Senior Software Engineer",
     company: "Josys",
-    period: "Nov 2024 - Present",
+    period: "Oct 2024 - Present",
     impact:
       "Building enterprise-scale SaaS admin platforms with AI-driven analytics, Micro Frontend architecture, advanced data visualization, and secure governance workflows for global IT management systems.",
     points: [
@@ -58,7 +58,7 @@ export const experiences = [
   {
     role: "Software Engineer",
     company: "Monster India (Foundit)",
-    period: "Jan 2023 - Oct 2024",
+    period: "Jan 2023 - Aug 2024",
     impact:
       "Developed high-traffic recruitment and fellowship platforms using React and Next.js with strong focus on SEO, Core Web Vitals, scalable UI systems, and conversion-driven experiences.",
     points: [
@@ -103,13 +103,14 @@ export const projects = [
     url: "https://hey-netmirror-gpt.netlify.app/",
   },
   {
-    name: "Enterprise Analytics Dashboard",
-    type: "AI Risk & Governance Platform",
+    name: "NutriAI : AI-Powered Calorie Tracker",
+    type: "AI-Powered Calorie Tracker App",
     description:
-      "A modern enterprise admin dashboard with analytics visualizations, governance workflows, advanced data grids, role-based access controls, and performance-focused architecture.",
-    stack: ["Next.js", "TypeScript", "Redux", "Material UI"],
-    metrics: "30% reduction in manual admin effort",
+      "AI-powered nutrition tracker using Gemini API for food analysis, calorie and macro tracking, and personalized nutrition insights, with interactive health dashboards.",
+    stack: ["Next.js", "TypeScript", "Gemini APi", "Material UI"],
+    metrics: "AI-Powered Calorie Tracker",
     accent: "lime",
+    url: "https://nutriai-health.netlify.app/",
   },
 ];
 
